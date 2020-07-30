@@ -2,7 +2,7 @@ import greyscale from './greyscale';
 import easing from './easing';
 
 $(document).on('turbolinks:load', function () {
-
+  console.log("inside ready");
   greyscale();
   easing();
 
