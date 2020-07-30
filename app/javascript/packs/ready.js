@@ -1,7 +1,7 @@
 import greyscale from './greyscale';
 import easing from './easing';
 
-$(document).on('ready turbolinks:load', function () {
+$(document).on('turbolinks:load', function () {
 
   greyscale();
   easing();
@@ -75,7 +75,7 @@ $(document).on('ready turbolinks:load', function () {
   // Modal toggle
   $('#myModal').modal();
 
-  // Show characters left for meta description. 
+  // Show characters left for meta description.
   $('#meta-word-text').keyup(function(e){
     var numWords = $.trim($("#meta-word-text").val()).split("").length;
     $('#meta-word-label').text(`Characters left ${120-numWords}`)
